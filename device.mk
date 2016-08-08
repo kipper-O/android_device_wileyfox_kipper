@@ -29,3 +29,10 @@ $(call inherit-product, vendor/wileyfox/kipper/kipper-vendor.mk)
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0
+
+# Healthd packages
+PRODUCT_PACKAGES += \
+cm_charger_res_images \
+font_log.png \
+libhealthd.cm
+
