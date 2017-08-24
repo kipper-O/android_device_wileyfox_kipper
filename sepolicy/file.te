@@ -1,2 +1,0 @@
-type sensors_sysfs, fs_type, sysfs_type;
-type touchpanel_sysfs, fs_type, sysfs_type;
