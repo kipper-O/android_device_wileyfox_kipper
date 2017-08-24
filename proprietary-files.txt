@@ -110,13 +110,18 @@ vendor/lib/libmmcamera_imx220.so
 vendor/lib/libmmcamera_imx230.so
 vendor/lib/libmmcamera_ov8858_q8v19w_spirit.so
 
-# DRM
-bin/qseecomd
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/librpmb.so
-vendor/lib64/libssd.so
+# DRM - from TOS125B
+bin/qseecomd|32f84827b28dd3603ac8b863adee16998c92cc3e
+vendor/lib64/lib-sec-disp.so|26fcf87e775498125415428c68208b91ddb41a4e
+vendor/lib64/libdrmfs.so|645998dfcb0d204ef7eb5a2f7ccd96d71eb045be
+vendor/lib64/libdrmtime.so|71b44bd96e194b43b7c6e50a97eb5efd5f5f95e4
+vendor/lib64/libQSEEComAPI.so|5ec09d3085cc6a7157ed094d677bbfd1479fbac4
+vendor/lib64/librpmb.so|25bfd9f541db45756cf0b03bcc8284a90408ff18
+vendor/lib64/libsecureui.so|9b384a585313d739f8f25e34efd944db962ac0f5
+vendor/lib64/libsecureui_svcsock.so|8a27b9693bb5f7e7acc7294bfd046c720074011b
+vendor/lib64/libSecureUILib.so|62a723c5aabc264f653cb150e61ee4aff04e4fce
+vendor/lib64/libssd.so|4e1ca3d1f0dc7deaa0fd58e1dc6407d8cd020852
+vendor/lib64/libStDrvInt.so|8e7eab1f2d93c38edcf9a932cef2841969d9ef9c
 
 # GPS
 -lib64/libloc_api_v02.so
@@ -194,12 +199,15 @@ vendor/lib/libscale.so
 etc/firmware/a420_pfp.fw
 etc/firmware/a420_pm4.fw
 
-# Media
-vendor/lib/libI420colorconvert.so
-vendor/lib/libmm-color-convertor.so
-vendor/lib/libOmxAacDec.so
-vendor/lib/libOmxEvrcDec.so
-vendor/lib/libOmxQcelp13Dec.so
+# Media - from TOS125B
+vendor/lib64/libmmosal.so|59744291e539c5d218ef6231fe548b039b430b70
+vendor/lib64/libOmxAacDec.so|f9e53187b93e6cef06e42b34e512f42d16827cb0
+vendor/lib/libI420colorconvert.so|6f41a248acb5546874588ddcd4b940a95583515e
+vendor/lib/libmm-color-convertor.so|62e4cd5fefb6bd498b10256fd3dcb990197405f6
+vendor/lib/libmmosal.so|e72ef268ce23f506c56935f23cab820c5a6b2d8b
+vendor/lib/libOmxAacDec.so|c4161397293f5bed3e991edc0055d5b258aba4cd
+vendor/lib/libOmxEvrcDec.so|b4ff4380a7e0335372d926663c8f9981ad615115
+vendor/lib/libOmxQcelp13Dec.so|b4110e3e9a959b4d1a5e0f42a31efb2d8fd0bf0c
 
 # Perf
 bin/msm_irqbalance
@@ -209,14 +217,18 @@ vendor/lib/libqti-perfd-client.so
 
 # Postprocessing
 bin/mm-pp-daemon
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libmm-abl.so
-vendor/lib64/libmm-abl-oem.so
+etc/permissions/com.qti.snapdragon.sdk.display.xml|c7379e4fea71c2600f34b897cee760930ab0ce8b
+framework/com.qti.snapdragon.sdk.display.jar|80666d2527882115cac8a1661f698a3ce289cba7
+-app/colorservice/colorservice.apk|70e389568640118e0df26302834a1f9cf5510dec
+vendor/lib64/libdisp-aba.so|863c28e2df51bfd718213fc4fe8936427d1c1978
+vendor/lib64/libmm-abl.so|080c41038facd782f59432099ba40b900e729550
+vendor/lib64/libmm-abl-oem.so|444eab8c7e2468ac757f493bdf5fa6748af4aa00
 vendor/lib64/libmm-als.so
 vendor/lib64/libmm-disp-apis.so
 vendor/lib64/libmm-qdcm.so
 
 # Qualcomm framework
+etc/permissions/qti_permissions.xml|fd8a1db3c18b6d58334d747e47f4b155bb612039
 bin/irsc_util
 vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
@@ -251,35 +263,44 @@ vendor/lib/libqmiservices.so
 vendor/lib/libqmi.so
 vendor/lib/libsmemlog.so
 
-# Radio
--app/shutdownlistener/shutdownlistener.apk
-bin/netmgrd
-bin/qmuxd
-bin/radish
-bin/rmt_storage
-etc/permissions/qcnvitems.xml
-etc/permissions/qcrilhook.xml
--framework/qcnvitems.jar
--framework/qcrilhook.jar
-lib64/librilqmiservices.so
--priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
-vendor/lib64/libcneapiclient.so
-vendor/lib64/libconfigdb.so
-vendor/lib64/liblqe.so
-vendor/lib64/libmdmdetect.so
-vendor/lib64/libnetmgr.so
-vendor/lib64/libperipheral_client.so
-vendor/lib64/libril-qc-ltedirectdisc.so
-vendor/lib64/libril-qc-qmi-1.so
-vendor/lib64/libril-qc-radioconfig.so
-vendor/lib64/libril-qcril-hook-oem.so
-vendor/lib64/libsettings.so
-vendor/lib64/libsystem_health_mon.so
-vendor/lib64/libxml.so
-vendor/lib/libmdmdetect.so
-
 # Serial
 -bin/cktnvtool|6ed50ba3cec0fcace43480e1f7d3bde7dbc4c8f1
+
+# Radio - from TOS125B
+-app/shutdownlistener/shutdownlistener.apk|61bf2ac0e7c312036423f2c77a310aa310d06f7b
+-framework/qcnvitems.jar|b50c25a4760313acd6ad770bf1ee207b5376b53e
+-framework/qcrilhook.jar|4ac8f925c1e76da54279867a14c32e5bc868b6df
+-priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|8ca1e2e05596914c57d3a4ce0f367d810da7bb7f
+-app/QtiTelephonyService/QtiTelephonyService.apk|04ac46efe048f696775c8cebdc89f757633da674
+bin/netmgrd|f6e0a4f92bd0cc8e9cf7be1d2a60ffde4ce7123a
+bin/qmuxd|d36ad140da7833c0b82ecb28262360d3e974cb0d
+bin/radish|9cb3017bc4ece05809662d76f9141044b1daee6c
+bin/rmt_storage|ddec53a336abfe30f96d0eaa83565936166c571f
+etc/permissions/qcnvitems.xml|dc0e70cace2317b5169a454cbc2bbf8887c18d55
+etc/permissions/qcrilhook.xml|9fc58a3d54d20ac1d53bab14608815121aefbce5
+etc/permissions/telephonyservice.xml|b297c8a27443570377d78586b00198839ce326bb
+framework/embmslibrary.jar|a06799495515305de3e5d432ec62a1f692200c99
+framework/qti-telephony-common.jar|4f0616bebe5a64be869b5b97787ecfe67c37f6d8
+framework/QtiTelephonyServicelibrary.jar|3f3a8f6244c2dbf422124e27672193181699f72b
+lib64/librilqmiservices.so|f2e5672219ea59c479f2389c70ac0907a7a78265
+vendor/lib64/libcneapiclient.so|f111dad42ce618fc6c4f79f08c7427235bb041f9
+vendor/lib64/libconfigdb.so|672cef86baab5ed9e4683c527f762c8accdff493
+vendor/lib64/liblqe.so|cb61ddbbd43e46ae56ef5f98c47b631d58808326
+vendor/lib64/libmdmdetect.so|67760bce9c33e844924cdef4ce7e6bcc2ccee46d
+vendor/lib64/libnetmgr.so|eb1d3db436403428f2d6bcba8a141a3faaf332a8
+vendor/lib64/libperipheral_client.so|ac882d73f7279065fffe4ca040246103a3154c1c
+vendor/lib64/libprotobuf-cpp-biss.so|2ff21ed0d227c1b14724ae86984dc311cbfbd767
+vendor/lib64/libprotobuf-cpp-shit.so|38af989670b0dd40400ce9cc6e3adbbe5ad6a6b0
+vendor/lib64/libril-qc-ltedirectdisc.so|a3048c2656f5f6eaf1149d2e262f8abf35296975
+vendor/lib64/libril-qc-qmi-1.so|a8ebaeab579bcac5fcde662e8f321279e3d30dfd
+vendor/lib64/libril-qc-radioconfig.so|c969caddfb5d59582a892c34671c604b3dfed802
+vendor/lib64/libril-qcril-hook-oem.so|f651e4a0b6a5e0a38660dd8c2a5ded71ae14efb9
+vendor/lib64/libsettings.so|f8d6d56e365ae30272505108706eee5966d619fb
+vendor/lib64/libsystem_health_mon.so|71adfec8a25dae86d5ad9bc54e9a88ea4fcc2b35
+vendor/lib64/libxml.so|26d53a36db5ea231729a85f385638afff4a2fe60
+vendor/lib/libmdmdetect.so|2c57282fce7367471e44a35305ace773ae89fd30
+vendor/lib/libprotobuf-cpp-biss.so|e8d582d4f90fa56fcde929924a3312634c97147f
+vendor/lib/libprotobuf-cpp-shit.so|d36114ee2387d458c3bb80d43b48c842edc33fda
 
 # Signed Venus (media) firmware
 etc/firmware/venus.b00
