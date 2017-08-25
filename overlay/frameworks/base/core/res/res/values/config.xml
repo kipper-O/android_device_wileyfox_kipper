@@ -206,4 +206,7 @@
         <item>"/data/dalvik-cache/arm64/system@framework@boot.oat"</item>
         <item>"/data/dalvik-cache/arm64/system@framework@services.jar@classes.dex"</item>
    </string-array>
+
+   <!-- Navigation Bar -->
+   <bool name="config_showNavigationBar">true</bool>
 </resources>
