@@ -280,7 +280,6 @@ vendor/lib/libmdmdetect.so
 
 # Serial
 -bin/cktnvtool|6ed50ba3cec0fcace43480e1f7d3bde7dbc4c8f1
->>>>>>> parent of 303386e... kipper: Add more radio blobs from TOS125B
 
 # Signed Venus (media) firmware
 etc/firmware/venus.b00
