@@ -51,9 +51,9 @@ LOCAL_C_INCLUDES := \
         $(LOCAL_PATH)/../stack/common \
         frameworks/native/include \
         frameworks/native/include/media/openmax \
-        hardware/qcom/display/msm8909/libgralloc \
-        hardware/qcom/display/msm8909/libqdutils \
-        hardware/qcom/media/msm8916/libstagefrighthw \
+        $(call project-path-for,qcom-display)/libgralloc \
+        $(call project-path-for,qcom-display)/libqdutils \
+        $(call project-path-for,qcom-media)/libstagefrighthw \
         system/media/camera/include \
         $(LOCAL_PATH)/../../mm-image-codec/qexif \
         $(LOCAL_PATH)/../../mm-image-codec/qomx_core \
@@ -69,12 +69,12 @@ endif
 LOCAL_C_INCLUDES += \
         $(TARGET_OUT_HEADERS)/qcom/display
 LOCAL_C_INCLUDES += \
-        hardware/qcom/display/msm8909/libqservice
+        $(call project-path-for,qcom-display)/libqservice
 
 #ifeq ($(TARGET_USE_VENDOR_CAMERA_EXT),true)
-#LOCAL_C_INCLUDES += hardware/qcom/display/msm8909/libgralloc
+#LOCAL_C_INCLUDES += $(call project-path-for,qcom-display)/libgralloc
 #else
-LOCAL_C_INCLUDES += hardware/qcom/display/msm8909/libgralloc
+LOCAL_C_INCLUDES += $(call project-path-for,qcom-display)/libgralloc
 #endif
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/media
