@@ -1,0 +1,1 @@
+include device/lineage/sepolicy/common/sepolicy.mk
