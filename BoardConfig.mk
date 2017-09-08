@@ -17,7 +17,7 @@ include device/cyanogen/msm8916-common/BoardConfigCommon.mk
 
 include device/wileyfox/kipper/board/*.mk
 
-TARGET_BOARD_INFO_FILE := device/wileyfox/kipper/board-info.txt
+#TARGET_BOARD_INFO_FILE := device/wileyfox/kipper/board-info.txt
 
 # Inherit from proprietary files
 include vendor/wileyfox/kipper/BoardConfigVendor.mk
