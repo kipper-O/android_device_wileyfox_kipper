@@ -1,2 +1,8 @@
 # Hardware revision
 ro.product.model.platform=1
+
+# ADB at boot
+persist.service.adb.enable=1
+persist.service.debuggable=1
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
