@@ -270,7 +270,9 @@ vendor/lib/libsmemlog.so
 -app/shutdownlistener/shutdownlistener.apk|61bf2ac0e7c312036423f2c77a310aa310d06f7b
 -framework/qcnvitems.jar|b50c25a4760313acd6ad770bf1ee207b5376b53e
 -framework/qcrilhook.jar|4ac8f925c1e76da54279867a14c32e5bc868b6df
+framework/com.quicinc.cne.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|8ca1e2e05596914c57d3a4ce0f367d810da7bb7f
+-priv-app/CNEService:priv-app/CNEService/CNEService.apk:PRESIGNED
 -app/QtiTelephonyService/QtiTelephonyService.apk|04ac46efe048f696775c8cebdc89f757633da674
 bin/netmgrd|f6e0a4f92bd0cc8e9cf7be1d2a60ffde4ce7123a
 bin/qmuxd|d36ad140da7833c0b82ecb28262360d3e974cb0d
