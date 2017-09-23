@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2015 The CyanogenMod Project
+# Copyright (C) 2017 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,7 +23,7 @@ $(call inherit-product, device/wileyfox/kipper/device.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := kipper
-PRODUCT_NAME := full_kipper
+PRODUCT_NAME := aoscp_kipper
 PRODUCT_BRAND := Wileyfox
 PRODUCT_MODEL := KIPPER
 PRODUCT_MANUFACTURER := Wileyfox
