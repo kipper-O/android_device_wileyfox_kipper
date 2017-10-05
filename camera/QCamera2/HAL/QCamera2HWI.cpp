@@ -1785,7 +1785,7 @@ QCameraMemory *QCamera2HardwareInterface::allocateStreamBuf(
     case CAM_STREAM_TYPE_POSTVIEW:
         {
             if (isPreviewRestartEnabled() || isNoDisplayMode()) {
-                mem = new QCameraStreamMemory(mGetMemory, mCallbackCookie,  bCachedMem);
+                mem = new QCameraStreamMemory(mGetMemory, mCallbackCookie, bCachedMem);
             } else {
                 cam_dimension_t dim;
                 int minFPS, maxFPS;
