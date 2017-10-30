@@ -28,7 +28,7 @@ PRODUCT_DEVICE := kipper
 PRODUCT_GMS_CLIENTID_BASE := android-wileyfox
 
 PRODUCT_MANUFACTURER := Wileyfox
-PRODUCT_MODEL := Wileyfox Storm
+PRODUCT_MODEL := Storm
 
 PRODUCT_BRAND := Wileyfox
 TARGET_VENDOR := wileyfox
