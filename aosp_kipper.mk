@@ -15,20 +15,23 @@
 
 $(call inherit-product, device/wileyfox/kipper/full_kipper.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+#Bootanimation res
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Inherit some common AEX stuff.
+$(call inherit-product, vendor/aosp/config/common.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
-PRODUCT_NAME := lineage_kipper
+PRODUCT_NAME := aosp_kipper
 BOARD_VENDOR := wileyfox
 PRODUCT_DEVICE := kipper
 
 PRODUCT_GMS_CLIENTID_BASE := android-wileyfox
 
 PRODUCT_MANUFACTURER := Wileyfox
-PRODUCT_MODEL := Wileyfox Storm
+PRODUCT_MODEL := Storm
 
 PRODUCT_BRAND := Wileyfox
 TARGET_VENDOR := wileyfox
