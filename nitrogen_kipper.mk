@@ -16,12 +16,12 @@
 $(call inherit-product, device/wileyfox/kipper/full_kipper.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, nitrogen/products/common.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
 
-PRODUCT_NAME := lineage_kipper
+PRODUCT_NAME := nitrogen_kipper
 BOARD_VENDOR := wileyfox
 PRODUCT_DEVICE := kipper
 
