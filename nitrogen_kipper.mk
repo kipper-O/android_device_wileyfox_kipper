@@ -16,7 +16,7 @@
 $(call inherit-product, device/wileyfox/kipper/full_kipper.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, nitrogen/products/common.mk)
+$(call inherit-product, vendor/nitrogen/products/common.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8939
