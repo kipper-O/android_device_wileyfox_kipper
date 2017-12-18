@@ -157,6 +157,9 @@
     -->
     <integer name="config_doubleTapOnHomeBehavior">0</integer>
 
+    <!-- Enable Custom Button Brightness -->
+    <bool name="config_deviceHasVariableButtonBrightness">true</bool>
+
     <!-- Default color for notification LED. -->
     <color name="config_defaultNotificationColor">#FFFF00FF</color>
 
