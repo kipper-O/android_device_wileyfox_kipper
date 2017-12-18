@@ -25,6 +25,3 @@ include $(LOCAL_PATH)/product/*.mk
 
 # Call the proprietary setup
 $(call inherit-product, vendor/wileyfox/kipper/kipper-vendor.mk)
-
-PRODUCT_PACKAGES +=\
-FMRadio
